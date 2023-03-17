@@ -1,0 +1,9 @@
+CREATE TABLE lemonseed (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, items_sold INTEGER);
+INSERT INTO lemonseed VALUES (1, "Pants", 5, 20, 3);
+INSERT INTO lemonseed VALUES (2, "Tshirts", 10, 10, 4);
+INSERT INTO lemonseed VALUES (3, "Shoes", 10, 15, 2);
+INSERT INTO lemonseed VALUES (4, "Jewelry", 25, 10, 7);
+INSERT INTO lemonseed VALUES (5, "Socks", 30, 5, 14);
+
+SELECT * FROM lemonseed ORDER BY price;
+SELECT SUM(items_sold) FROM lemonseed;
